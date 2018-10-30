@@ -8,9 +8,9 @@ class WandsList extends Component{
     ));
     return(
       <div>
-        <div className="">
-          <h3>List of Wands:</h3>
-            <div className="row" style={{marginLeft: 150}}>
+        <div className="this.props.wands">
+          <h3 className = "head">List of Wands:</h3>
+            <div className="row bk" style={{marginLeft: 150}}>
               {wandCards}
             </div>
         </div>

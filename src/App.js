@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import staff from './staff.png';
 import './App.css';
 import wands from './wands';
 import WandsList from "./WandsList"
@@ -8,20 +9,28 @@ import WandCard from "./WandCard"
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App backG">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <img src={staff} className="App-logo" alt="logo" />
+          <h1 className="App-title welcome" style={{marginTop: 20}}>Welcome to Ollivanders Wand Shop</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
 
         <div className="content col-10">
             <WandsList wands={wands}/>
         </div>
-
       </div>
+
+
+            //  <div id="app" className="container-fluid container">
+            //   <div className="jumbotron mm">
+            //     <div className="row">
+            //       <div className="content col-12">
+            //         <WandsList wands={wands} />
+            //       </div>
+            //     </div>
+            //   </div>
+            // </div>
+
     );
   }
 }
